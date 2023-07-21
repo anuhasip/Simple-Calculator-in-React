@@ -12,10 +12,28 @@
     background-color: rgb(190, 255, 255);
 }
 
+.cal-equal-btn {
+    width: 110px;
+    background-color: rgb(0, 255, 170);
+}
+
+.cal-ac-btn {
+    width: 110px;
+    background-color: rgb(255, 153, 0);
+}
+
+.cal-c-btn {
+    background-color: rgb(255, 153, 0);
+}
+
 .calculator {
     /*width: 50%;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     max-width: 240px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     border-radius: 5px;
     padding: 10px;
     background-color: rgb(86, 86, 86);
@@ -28,10 +46,12 @@
     border: 2px solid whitesmoke;
     border-radius: 5px;
     padding: 5px 10px;
-    text-align: end;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
-.display .answer-area {
+.display span {
     font-size: 25px;
 }
